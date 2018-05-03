@@ -8,6 +8,20 @@
 	
 	<!--Snowman-->
 	<body>
+		
+	<div id="mountain" class="mountain">
+        <div></div>
+    </div>	
+		
+	<!--Tree - put it here so it stays behind other elements on page - static image of a tree sitting on a hill which is then copied by JS script throughout the scene-->
+		<div id="tree" class="fir">
+			<div class="fir-item"></div>
+			<div class="fir-item"></div>
+			<div class="fir-item"></div>
+			<div class="fir-log"></div>
+			<div class="hill"></div>
+		</div>
+		
 		<div class="snowman">
 			<div class="smHead">
 				<div class="hat">
@@ -25,10 +39,14 @@
 			
 			<div class="smBody"></div>
 			<div class="smFeet"></div>
-			
 			<!--Hill-->
 			<div class="hill"></div>
-
 		</div>
+		
+		<div id="snow"></div>
+		<script src="assets/js/app.js"></script>
+		<script src="assets/js/snow.js"></script>
+			<audio controls>
+		<source src="assets/audio/winterwonderland.wav" type="audio/wav">Your browser does not support the audio element.</audio
 	</body>
 </html>

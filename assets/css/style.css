@@ -8,7 +8,7 @@ html {
 body {
 	margin: 0%;
 	width: 100%;
-	Height: 100%;
+	height: 100%;
 	overflow: hidden;
 	color: #fff;
 	background-color: #9cf;
@@ -112,23 +112,110 @@ body {
     bottom: -40px;
     z-index: 9;
 }
- 	
+
 .smFeet {
     width: 250px;
     height: 300px;
 	z-index: 8;
     margin-bottom: -40px;
 }
-
-
 .hill {
     border-top: 2px solid #000;
     width: 300%;
     margin-left: -150%;
     min-height: 100px;
-    padding: 60%;
+    padding: 65%;
     border-radius: 50%;
     border-left-color: transparent;
     border-right-color: transparent;
     background-color: #FFF;
+}
+.fir {
+	position: absolute;
+	margin: 0 auto;
+	width: 8em;
+	bottom: 0;
+	margin-bottom: -150px
+}
+.fir-item {
+	margin: 0 auto;
+	width: 0;
+	height: 0;
+	border-left: 2.3em solid transparent;
+	border-right: 2.3em solid transparent;
+	border-bottom: 3em solid #16850c
+}
+.fir-item:nth-child(2) {
+	margin-top: -1.3em;
+	border-left-width: 3em;
+	border-right-width: 3em;
+	border-bottom-width: 4em
+}
+.fir-item:nth-child(3) {
+	margin-top: -1.7em;
+	border-left-width: 4em;
+	border-right-width: 4em;
+	border-bottom-width: 5em
+}
+.fir-log {
+	margin: 0 auto;
+	width: 1.3em;
+	height: 1.3em;
+	background: #8c370f;
+	background: linear-gradient(#8c370f, #5c240a)
+}
+.mountain {
+    z-index: -10;
+    position: absolute;
+    left: -10px;
+    bottom: -500px;
+    width: 80%;
+    height: 95%;
+    background-color: #755223;
+    -moz-transform: scale(1) rotate(45deg);
+    -webkit-transform: scale(1) rotate(45deg);
+    -o-transform: scale(1) rotate(45deg);
+    -ms-transform: scale(1) rotate(45deg);
+    transform: scale(1) rotate(45deg);
+    border-radius: 15px;
+    overflow: hidden;
+    -webkit-box-shadow: 10px 14px 16px -16px #222;
+    -moz-box-shadow: 10px 14px 16px -16px #222;
+    box-shadow: 10px 14px 16px -16px #222;
+}
+
+.mountain div {
+    position: absolute;
+    top: -20px;
+    left: -30px;
+    width: 80px;
+    height: 80px;
+    background-color: #eee;
+    border-radius: 10px
+}
+.snowflake {
+	display: block;
+	position: absolute;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	/* translateZ gives a 3-D rendering effect, with snowflakes appearing closer and further away from the screen randomly */
+	-webkit-transform: translateZ(0);
+	-moz-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	-o-transform: translateZ(0);
+	transform: translateZ(0);
+	/* the user-select: none means that the snowflakes can't be clicked on, it gives that resistance force to the snowflakes */
+   -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    background-image: -webkit-radial-gradient( center, circle farthest-corner, rgba(255, 255, 255, 1) 40%, rgba(255, 255, 255, 0) 100% );
+    background-image: -moz-radial-gradient( center, circle farthest-corner, rgba(255, 255, 255, 1) 40%, rgba(255, 255, 255, 0) 100% );
+    background-image: -ms-radial-gradient( center, circle farthest-corner, rgba(255, 255, 255, 1) 40%, rgba(255, 255, 255, 0) 100% );
+    background-image: radial-gradient( center, circle farthest-corner, rgba(255, 255, 255, 1) 40%, rgba(255, 255, 255, 0) 100% );
+}
+#snow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
 }
